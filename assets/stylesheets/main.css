@@ -65,3 +65,9 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
     -moz-transform: translate3d(0, 105%, 0) rotateX(-90deg);
     -webkit-transform: translate3d(0, 105%, 0) rotateX(-90deg);
 }
+
+.link:hover span{
+    transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+}
