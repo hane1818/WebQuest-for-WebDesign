@@ -33,6 +33,11 @@ footer {
 .link span {
     display: block;
 
+    transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+
     transform-origin: 50% 0%;
     -ms-transform-origin: 50% 0%;
     -moz-transform-origin: 50% 0%;
