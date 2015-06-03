@@ -43,3 +43,10 @@ footer {
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
 }
+
+li:nth-of-type(1) .link span::after { content:"簡介"; }
+li:nth-of-type(2) .link span::after { content:"任務"; }
+li:nth-of-type(3) .link span::after { content:"過程"; }
+li:nth-of-type(4) .link span::after { content:"資源"; }
+li:nth-of-type(5) .link span::after { content:"評估"; }
+li:nth-of-type(6) .link span::after { content:"結論"; }
