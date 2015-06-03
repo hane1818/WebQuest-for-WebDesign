@@ -29,3 +29,13 @@ footer {
     overflow: hidden;
     vertical-align: top;
 }
+
+.link span {
+    display: block;
+
+    transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+}
