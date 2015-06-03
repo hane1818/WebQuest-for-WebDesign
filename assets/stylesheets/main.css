@@ -60,4 +60,8 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
     -moz-transform-origin: 50% 0%;
     -o-transform-origin: 50% 0%;
     -webkit-transform-origin: 50% 0%;
+
+    transform: translate3d(0, 105%, 0) rotateX(-90deg);
+    -moz-transform: translate3d(0, 105%, 0) rotateX(-90deg);
+    -webkit-transform: translate3d(0, 105%, 0) rotateX(-90deg);
 }
