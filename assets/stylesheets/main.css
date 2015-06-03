@@ -1,0 +1,25 @@
+@import url('reset.css');
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Consolas', '微軟正黑體';
+    letter-spacing: 3px;
+}
+
+a {
+    box-sizing: border-box;
+    color: #636363;
+    text-decoration: none;
+    text-shadow: 0 0 5px #333;
+}
+
+footer {
+    bottom: 0;
+    clear: both;
+    overflow: hidden;
+    padding: 20px 0;
+    background: #dedede;
+    letter-spacing: 5px;
+    text-align: center;
+}
