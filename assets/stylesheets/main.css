@@ -23,3 +23,9 @@ footer {
     letter-spacing: 5px;
     text-align: center;
 }
+
+.link {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
