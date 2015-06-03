@@ -50,3 +50,14 @@ li:nth-of-type(3) .link span::after { content:"過程"; }
 li:nth-of-type(4) .link span::after { content:"資源"; }
 li:nth-of-type(5) .link span::after { content:"評估"; }
 li:nth-of-type(6) .link span::after { content:"結論"; }
+
+.link span::after {
+    display: block;
+    text-align: center;
+
+    transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+}
