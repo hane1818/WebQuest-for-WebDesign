@@ -3,13 +3,14 @@
 body {
     background: #fff;
     color: #000;
-    font-family: 'Consolas', '微軟正黑體';
+    font-family: 'Tahoma', 'Helvetica', 'Consolas', '微軟正黑體';
     letter-spacing: 3px;
 }
 
 a {
     box-sizing: border-box;
-    color: #636363;
+    color: #363636/*#636363*/;
+    font-size: 18px;
     text-decoration: none;
     text-shadow: 0 0 5px #333;
 }
@@ -24,20 +25,39 @@ footer {
     text-align: center;
 }
 
+.banner{
+    height: 100vh;
+    background: url("../../images/banner.jpg") no-repeat fixed center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.nav-front-page {
+    position: fixed;
+    top:0;
+    right: 0;
+    background: hsla(0, 0%, 95%, 0.7);
+}
+
+.nav-front-page ul li {
+    display: inline-block;
+}
+
 .link {
     display: inline-block;
     padding: 10px;
     overflow: hidden;
-    vertical-align: top;
 }
 
 .link span {
     display: block;
+    position: relative;
+    text-transform: uppercase;
 
-    transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    -webkit-transition: all 400ms ease;
+    transition: all 450ms ease-out;
+    -moz-transition: all 450ms ease-out;
+    -o-transition: all 450ms ease-out;
+    -webkit-transition: all 450ms ease-out;
 
     transform-origin: 50% 0%;
     -ms-transform-origin: 50% 0%;
@@ -60,6 +80,10 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
 .link span::after {
     display: block;
     text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
 
     transform-origin: 50% 0%;
     -ms-transform-origin: 50% 0%;
@@ -73,6 +97,8 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
 }
 
 .link:hover span{
+    background: hsla(0, 50%, 100%, 0.6);
+
     transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
     -webkit-transform: rotateX(90deg);
