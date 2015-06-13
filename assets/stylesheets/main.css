@@ -15,6 +15,11 @@ a {
     text-shadow: 0 0 5px #333;
 }
 
+header {
+    height: 100vh;
+    overflow: hidden;
+}
+
 footer {
     bottom: 0;
     clear: both;
@@ -26,21 +31,33 @@ footer {
 }
 
 .banner{
-    height: 100vh;
+    height: 100%;
     background: url("../../images/banner.jpg") no-repeat fixed center center;
     background-size: cover;
-    overflow: hidden;
 }
 
 .nav-front-page {
     position: fixed;
     top:0;
     right: 0;
+    width: 100%;
+    text-align: center;
     background: hsla(0, 0%, 95%, 0.7);
+    box-shadow: 0 3px 3px rgba(213, 213, 213, 1);
 }
 
 .nav-front-page ul li {
     display: inline-block;
+}
+
+.nav-front-page .small-title {
+    padding: 15px 0;
+    border-bottom: 1px solid #999;
+
+}
+
+.nav-front-page:hover ul {
+    display: block !important;
 }
 
 .link {
