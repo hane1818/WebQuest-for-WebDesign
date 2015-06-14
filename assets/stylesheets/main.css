@@ -16,6 +16,10 @@ a {
     text-shadow: 0 0 5px #333;
 }
 
+img {
+    width: 90%;
+}
+
 header {
     height: 100vh;
     width: 100%;
@@ -75,6 +79,7 @@ footer {
     text-align: center;
     background: hsla(0, 0%, 95%, 0.7);
     box-shadow: 0 3px 3px rgba(150, 150, 150, 1);
+    z-index: 999;
 }
 
 .nav-front-page ul li {
@@ -153,9 +158,45 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
 }
 
 .site-content {
-    max-width: 900px;
+    padding: 10vmin 0.5rem;
+    max-width: 780px;
     width: 80%;
+    margin: 2.7rem auto;
+    line-height: 2rem;
+    font-family: 'Helvetica', '微軟正黑體';
+}
+
+.site-content .site-title {
+    margin: 30px auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#resource a {
+    display: block;
+    height: 350px;
     margin: 50px auto;
+    padding: 1rem;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #555;
+    cursor: alias;
+}
+
+#resource a img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 874px)
