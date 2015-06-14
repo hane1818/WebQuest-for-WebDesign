@@ -6,6 +6,7 @@ body {
     color: #000;
     font-family: 'Tahoma', 'Helvetica', 'Consolas', '微軟正黑體';
     letter-spacing: 3px;
+    overflow-x: hidden;
 }
 
 a {
@@ -197,6 +198,30 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
     transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+}
+
+#evaluation .table-content {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#evaluation table {
+    border-spacing: 0;
+    margin: 1.5rem;
+    min-width: 500px;
+}
+
+#evaluation table tr:first-child td {
+    background: #ddd;
+    font-weight: 900;
+}
+
+#evaluation table tr td {
+    padding: 1rem 0.7rem;
+    border: 2px solid #555;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 874px)
