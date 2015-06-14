@@ -1,5 +1,6 @@
 @import url('reset.css');
 
+
 body {
     background: #fff;
     color: #000;
@@ -17,23 +18,53 @@ a {
 
 header {
     height: 100vh;
+    width: 100%;
     overflow: hidden;
+    font-size: 18px;
 }
 
 footer {
     bottom: 0;
     clear: both;
     overflow: hidden;
-    padding: 20px 0;
-    background: #dedede;
+    box-sizing: border-box;
+    height: 20vh;
+    padding: 10vh 0;
+    background: #eee;
     letter-spacing: 5px;
     text-align: center;
+    font-size: 2.5vh;
 }
 
 .banner{
     height: 100%;
     background: url("../../images/banner.jpg") no-repeat fixed center center;
     background-size: cover;
+}
+
+.banner .title, .banner .sub-title {
+    display: inline-block;
+    position: absolute;
+    top: 23vmin;
+    left: 0;
+    right: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 1.5vw #111;
+}
+
+.banner .title {
+    font-size: 28vmin;
+}
+
+.banner .sub-title {
+    margin-top: 30vmin;
+    background: rgba(100, 100, 100, 0.7);
+    color: #fff;
+    font-size: 8vmin;
 }
 
 .nav-front-page {
@@ -43,7 +74,7 @@ footer {
     width: 100%;
     text-align: center;
     background: hsla(0, 0%, 95%, 0.7);
-    box-shadow: 0 3px 3px rgba(213, 213, 213, 1);
+    box-shadow: 0 3px 3px rgba(150, 150, 150, 1);
 }
 
 .nav-front-page ul li {
@@ -119,4 +150,39 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
     transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
     -webkit-transform: rotateX(90deg);
+}
+
+.site-content {
+    max-width: 900px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+@media only screen and (max-width: 874px)
+{
+    .nav-front-page .small-title {
+        width: 100%;
+    }
+
+    .nav-front-page ul {
+        display: none !important;
+    }
+
+    .nav-front-page ul li {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 614px){
+    .banner .title, .banner .sub-title {
+        top: 15vmin;
+    }
+}
+
+@media only screen and (max-width: 1027px){
+    .banner .sub-title{
+        margin-top: 60vmin;
+    }
 }
