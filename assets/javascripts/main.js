@@ -12,10 +12,11 @@ window.onload = function () {
         else
         {
             document.querySelector(".nav-front-page ul").style.display = "block";
-            for(i=0 ; i < link.length ; i++)
-            {
-                link[i].style.transform = "";
-            }
+        }
+
+        for(i=0 ; i < link.length ; i++)
+        {
+            link[i].style.transform = "";
         }
 
         for(i=0 ; i < content.length && window.scrollY >= content[i].offsetTop ; i++)
