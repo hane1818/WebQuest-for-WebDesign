@@ -6,7 +6,6 @@ body {
     color: #000;
     font-family: 'Tahoma', 'Helvetica', 'Consolas', '微軟正黑體';
     letter-spacing: 3px;
-    overflow-x: hidden;
 }
 
 a {
@@ -219,15 +218,17 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
 
 #evaluation table {
     border-spacing: 0;
-    margin: 1.5rem;
+    margin: 1.5rem auto;
     min-width: 500px;
-    width: 80%;
+    width: 100%;
     border: none;
 }
 
-#evaluation table tr:first-child td {
+#evaluation table tr:first-child td, #evaluation table tr td:first-child {
     background: #ddd;
     font-weight: 900;
+    text-align: center;
+    min-width: 120px;
 }
 
 #evaluation table tr td {
@@ -235,7 +236,16 @@ li:nth-of-type(6) .link span::after { content:"結論"; }
     border: 2px solid #555;
     font-size: 0.85rem;
     line-height: 1.5rem;
-    text-align: center;
+}
+
+#evaluation ol {
+    margin: 0rem;
+    padding-left: 0.5rem;
+}
+
+#evaluation ol li {
+    padding-left: 0.1rem;
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 874px)
